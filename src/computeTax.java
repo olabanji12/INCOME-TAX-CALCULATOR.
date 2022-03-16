@@ -5,8 +5,9 @@ public class computeTax {
         boolean inputCorrect ;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter your name: ");
+        System.out.println("Please enter your first name: ");
         String name = scanner.nextLine();
+
 
         System.out.println("Input your annual income:");
         double income = scanner.nextDouble();
