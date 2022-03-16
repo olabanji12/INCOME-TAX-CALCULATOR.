@@ -4,43 +4,36 @@ public class Account {
     int filingStatus;
     double tax;
 
-    public Account(String clientName, double income, int filingStatus) {
+    public Account(String clientName, double Income, int filingStatus) {
         this.clientName = clientName;
-        Income = income;
+        this.Income = Income;
         this.filingStatus = filingStatus;
     }
 
     public double single(double income){
         if(income <= 9950){
             tax = 0.10 * income;
-            System.out.println(tax);
         }
         else if(income <= 40525){
             tax = (0.10 * 9950) + 0.12 * (income - 9951);
-            System.out.println(tax);
         }
         else if(income <= 86375){
             tax = (0.10 * 9950) + 0.12 * (40525 - 9951) + 0.22 *(income - 40526);
-            System.out.println(tax);
         }
         else if (income <= 164925){
             tax = 0.10 * 9950 + 0.12 * (40525 - 9951) + 0.22 *(86375 - 40526) + 0.24 * (income - 86376);
-            System.out.println(tax);
         }
         else if(income <= 209425){
             tax = 0.10 * 9950 + 0.12 * (40525 - 9951) + 0.22 *(86375 - 40526) + 0.24 *(164925 - 86376) +
                     0.32 *(income - 164926);
-            System.out.println(tax);
         }
         else if (income <= 523600){
             tax = 0.10 * 9950 + 0.12 * (40525 - 9951) + 0.22 *(86375 - 40526) + 0.24 *(164925 - 86376) +
                     0.32 * (209425 - 164926) + 0.35 *(income - 209426);
-            System.out.println(tax);
         }
         else if(income >= 523601){
             tax =0.10 * 9950 + 0.12 * (40525 - 9951) + 0.22 *(86375 - 40526) + 0.24 *( 164925 - 86376) +
                     0.32 * (209425 - 164926) + 0.35 *(523600 - 209426) + 0.37 *(income - 523601);
-            System.out.println(tax);
         }
         return tax;
     }
