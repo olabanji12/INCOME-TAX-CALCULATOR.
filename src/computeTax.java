@@ -52,7 +52,7 @@ public class computeTax {
                 }
             }
         }
-        while(inputCorrect == false);
+        while(!inputCorrect);
 
     }
 }
