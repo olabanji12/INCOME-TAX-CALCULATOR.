@@ -1,3 +1,7 @@
+package main;
+
+import main.Account;
+
 import java.util.Scanner;
 
 public class computeTax {

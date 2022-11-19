@@ -1,8 +1,13 @@
+package main;
+
 public class Account {
     String clientName;
     double Income;
     int filingStatus;
     double tax;
+
+    public Account() {
+    }
 
     public Account(String clientName, double Income, int filingStatus) {
         this.clientName = clientName;
